@@ -1,0 +1,6 @@
+/build
+/node_modules
+.vscode
+.DS_Store
+/demo/logs
+/demo/caches

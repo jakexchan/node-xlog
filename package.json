@@ -1,0 +1,48 @@
+{
+  "name": "nodejs-xlog",
+  "version": "0.1.0",
+  "description": "Node.js addon of WeChat xlog",
+  "main": "index.js",
+  "type": "commonjs",
+  "typings": "index.d.ts",
+  "files": [
+    "mars/mars",
+    "mars/Copyright Notice of Boost",
+    "mars/LICENSE",
+    "mars/README.md",
+    "scripts",
+    "src/**/*.cc",
+    "src/**/*.h",
+    "CHANGELOG.md",
+    "CMakeLists.txt",
+    "index.d.ts",
+    "index.js",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "postinstall": "node ./scripts/postinstall.js",
+    "build": "cmake-js build",
+    "compile": "cmake-js compile",
+    "debug": "cmake-js compile -D",
+    "test": "node demo/test.js"
+  },
+  "author": "Kevin Chan",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakexchan/node-xlog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jakexchan/node-xlog/issues"
+  },
+  "homepage": "https://github.com/jakexchan/node-xlog#readme",
+  "license": "MIT",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "^6.1.0"
+  },
+  "devDependencies": {
+    "cmake-js": "^7.2.1",
+    "express": "^4.18.2"
+  }
+}
